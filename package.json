@@ -1,0 +1,22 @@
+{
+  "name": "food-tracker-app",
+  "version": "1.0.0",
+  "description": "Food Nutrition Tracking App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html",
+    "build-prod": "parcel build src/index.html"
+  },
+  "author": "Martin Holland",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.0.0-rc.0"
+  },
+  "dependencies": {
+    "chart": "^0.1.2",
+    "connect-cors": "^0.5.6",
+    "snackbar": "^1.1.0"
+  },
+  "keywords": []
+}

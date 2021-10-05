@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Tracker App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/faviconlogo.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="main_nav">
+            <img src="./assets/faviconlogo.svg" alt="Martin Holland Logo">
+            <h1>My Nutrition</h1>
+        </div>
+    </header>
+    <main>
+        <section id="food">
+            <form action="submit" id="add-food">
+
+                <label for="foodtype">Food Name:</label>
+                <select name="food" id="foodtype">
+                    <option data-food="pizza" value="Pizza">Pizza</option>
+                    <option data-food="pasta" value="Pasta">Pasta</option>
+                    <option data-food="burger" value="Burger">Burger</option>
+                    <option data-food="soup" value="Soup">Soup</option>
+                    <option data-food="salad" value="Salad">Salad</option>
+                    <option data-food="apple" value="Apple">Apple</option>
+                    <option data-food="peach" value="Peach">Peach</option>
+                    <option data-food="cider" value="Cider">Cider</option>
+                </select>
+                <label for="carbs">Carbs:</label>
+                <input type="number" name="carbs" id="carbs" min="0" max="1000" placeholder="0g" value="0">
+                <label for="protein">Protein:</label>
+                <input type="number" name="protein" id="protein" min="0" max="1000" placeholder="0g" value="0">
+                <label for="fat">Fat:</label>
+                <input type="number" name="fat" id="fat" min="0" max="1000" placeholder="0g" value="0">
+                <input type="submit" value="Add" id="add" onclick="myFunction()">
+                <div id="snackbar">Food added successfully</div>
+
+            </form>
+        </section>
+        <section id="stats">
+            <p id="placeholder">Placeholder for Chart</p>
+            <canvas id="statChart"></canvas>
+        </section>
+        <section id="log">
+            <div class="logcontainer">
+                <ul id="calorie-counter">
+                    <li id="caloriesListElement">Calories will be loaded here</li>
+                </ul>
+            </div>
+        </section>
+        <section id="cards">
+            <div class="history" id="history">
+            </div>
+            <div class="table">
+                <h2>Food Data History</h2>
+        <table>
+            <thead>
+                <th>Food</th>
+                <th>Carbs</th>
+                <th>Protein</th>
+                <th>Fat</th>
+            </thead>
+            <tbody id="result"></tbody>
+            </div>
+        </section>
+    </main>
+<footer>
+    <p>Images from Unsplash</p>
+</footer> 
+</body>
+<script>function myFunction() {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  }
+</script>
+<script src="index.js"></script>
+</html>

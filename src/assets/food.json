@@ -1,0 +1,51 @@
+[
+    {
+        "food": "Pizza",
+        "carbs": 20,
+        "protein": 4,
+        "fat": 5
+    },
+    {
+        "food": "Pasta",
+        "carbs": 20,
+        "protein": 1,
+        "fat": 2
+    },
+    {
+        "food": "Burger",
+        "carbs": 16,
+        "protein": 8,
+        "fat": 8
+    },
+    {
+        "food": "Soup",
+        "carbs": 8,
+        "protein": 5,
+        "fat": 3
+    },
+    {
+        "food": "Salad",
+        "carbs": 4,
+        "protein": 5,
+        "fat": 1
+    },
+    {
+        "food": "Apple",
+        "carbs": 8,
+        "protein": 2,
+        "fat": 1
+    },
+    {
+        "food": "Peach",
+        "carbs": 5,
+        "protein": 3,
+        "fat": 0
+    },
+    {
+        "food": "Cider",
+        "carbs": 2,
+        "protein": 0,
+        "fat": 1
+    }
+
+]

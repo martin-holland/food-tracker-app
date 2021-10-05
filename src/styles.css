@@ -1,0 +1,285 @@
+:root {
+    --bg-color: lightskyblue;
+    --light-bg-color: blanchedalmond;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins";
+    background-color: #4297A0;
+    background: url('https://images.unsplash.com/photo-1605210055344-330690f6c99d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2787&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main {
+    /* background-color: #4297A0 */
+}
+
+.main_nav {
+    margin: 0px 10%;
+    background-color: var(--bg-color);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;;
+    border: solid  black 1px;
+}
+.main_nav img, h1 {
+    margin: 10px 10px;
+}
+
+section {
+    margin: 0px 10%;
+    padding: 20px;
+}
+
+#food {
+    display:flex;
+    justify-content: center;
+}
+#add-food {
+    background-color: var(--light-bg-color);
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 20px;
+    
+}
+input {
+    width: 80%;
+    max-width: 10vw;
+    height: 1em;
+    font-size: 1em;
+    display: block;
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+}
+label {
+    font-size: 1em;
+    display: block;
+    padding: 10px;
+}
+select {
+    height: 3em;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1em;
+}
+
+#stats p {
+    padding: 20px;
+}
+
+input[type=submit] {
+    text-align: center;
+    font-size: 1em;
+    margin: 10px 0 10px 0;
+    padding: 0;
+    height: 2em;
+}
+
+.logcontainer ul {
+    background: var(--bg-color);
+    border-radius: 10px;
+}
+
+.history {
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.foodCard:nth-child(odd) {
+    font-size: 1.25vw;
+    margin: 10px;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    height: 100px;
+    width: 30%;
+    border: black solid 1px;
+    box-shadow: 0 0 10px blue;
+}
+.foodCard:nth-child(even) {
+    font-size: 1.25vw;
+    margin: 10px;
+    background-color: var(--light-bg-color);
+    color: black;
+    border-radius: 10px;
+    height: 125px;
+    width: 30%;
+    border: black solid 1px;
+    box-shadow: 0 0 10px blue;
+}
+.foodCard h3 {
+    font-size: 1.25rem;
+    text-align: center;
+}
+.foodCard h4 {
+    font-size: 0.75rem;
+    text-align: center;
+    font-style: italic;
+}
+.foodCard ul {
+    text-align: center;
+}
+li {
+    display:inline-block;
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+}
+
+.logcontainer {
+    width: 100%;
+    border-radius: 10px;
+    border: black solid 1px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#placeholder {
+    color: white;
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color:var(--light-bg-color);
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    border: black solid 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+  }
+  
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+  #statChart {
+      max-height: 400px;
+      max-width: 800px;
+  }
+
+#statChart {
+    display: none;
+}
+
+.show-canvas {
+    display:block;
+}
+
+canvas {
+    margin: 0px 15%;
+    background-color: var(--light-bg-color);
+    border-radius: 10px;
+}
+
+.logcontainer {
+      margin: 20px 0;
+  }
+  
+  h2 {
+      font-size: 1.5em;
+      padding: 20px;
+  }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, td, th {
+    border: 1px solid black;
+    padding: 0.5em;
+}
+
+th {
+    background-color: var(--bg-color);
+}
+
+tr:nth-child(odd) {
+    background-color: var(--light-bg-color);
+}
+
+tr:nth-child(even) {
+    background-color: beige;
+}
+
+footer p {
+    padding: 20px;
+    color: white;
+}
+
+
+
+  @media (max-width: 1280px) {
+    input {
+        width: 80%;
+        max-width: 80vw;
+        height: 1em;
+        font-size: 1em;
+        display: block;
+        border-radius: 10px;
+        border: none;
+        padding: 20px;
+    }
+
+    .foodCard:nth-child(odd) {
+        height: 220px;
+    }
+    .foodCard:nth-child(even) {
+        height: 220px;
+    }
+    canvas {
+        margin: 0px;
+        background-color: var(--light-bg-color);
+        border-radius: 10px;
+    }
+    .foodCard li {
+        font-size: 0.75rem;
+        margin-top: 0;
+    }
+
+  }

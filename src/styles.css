@@ -217,13 +217,9 @@ canvas {
 }
 
 .logcontainer {
-      margin: 20px 0;
-  }
-  
-  h2 {
-      font-size: 1.5em;
-      padding: 20px;
-  }
+    margin: 20px 0;
+}
+
 
 table {
     border-collapse: collapse;
@@ -252,8 +248,13 @@ footer p {
     color: white;
 }
 
+h2 {
+    font-size: 1.5em;
+    padding: 20px;
+    text-align: center;
+}
 
-
+    
   @media (max-width: 1280px) {
     input {
         width: 80%;
